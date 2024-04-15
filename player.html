@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Player</title>
+</head>
+<body>
+    <h1>Player</h1>
+    
+    <!-- Create Form -->
+    <h2>Create Record</h2>
+    <form method="post" action="landingplayer.php">
+        <label for="firstname">First Name:</label>
+        <input type="text" id="firstname" name="first_name" required><br>
+        <label for="lastname">Last Name:</label>
+        <input type="text" id="lastname" name="last_name" required><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+        <label for="contact">Contact:</label>
+        <input type="text" id="contact" name="contact" required><br>
+        <label for="position">Position:</label>
+        <select name="position">
+            <option value="goalkeeper">Goalkeeper</option>
+            <option value="forward">Forward</option>
+            <option value="defence">Defence</option>
+            <option value="mediatar">Mediatar</option>
+            <option value="centeralforword">Centeral Forward</option>
+        </select><br>
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country" required><br>
+        <label for="club_id">Club ID:</label>
+        <input type="text" id="club_id" name="club_id" required><br>
+        <label for="date_of_birth">Date of Birth:</label>
+        <input type="date" id="date_of_birth" name="date_of_birth" required><br>
+        <button type="submit" name="create">CREATE</button>
+    </form>
+    
+    <!-- User List -->
+    <h2>Update, Delete, Read data of Player</h2>
+    <form method="post" action="landingplayer.php">
+        <input type="number" name="playeer_id" placeholder="New Player ID"><br>
+        <input type="text" name="newlast_name" placeholder="New Last Name"><br>
+        <input type="text" name="newfirst_name" placeholder="New First Name"><br>
+        <input type="email" name="newemail" placeholder="New Email"><br>
+        <input type="text" name="newContact" placeholder="New Contact Number"><br>
+        <select name="newposition">
+            <option value="newgoalkeeper">New Goalkeeper</option>
+            <option value="newforward">New Forward</option>
+            <option value="newdefence">New Defence</option>
+            <option value="newmediatar">New Mediatar</option>
+            <option value="newcenteralforword">New Centeral Forward</option>
+        </select><br>
+        <input type="text" name="newcountry" placeholder="New Country"><br>
+        <input type="text" name="newclub_id" placeholder="New Club ID"><br>
+        <input type="date" name="newdate_of_birth" placeholder="YYYY-MM-DD"><br>
+        <button type="submit" name="update">UPDATE</button>
+        <button type="submit" name="delete">DELETE</button>
+        <button type="submit" name="read">READ</button>
+    </form>
+</body>
+</html>

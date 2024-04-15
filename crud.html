@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bank</title>
+</head>
+<body>
+    <h1>Admin User</h1>
+    
+    <!-- Create Form -->
+    <h2>Create  new Record</h2>
+    <form method="post" action="phpfile/landingbank.php">
+        <label>bank_id:</label><br>
+        <input type="text" name="bank_id"><br>
+         <label> Bank Name:</label><br>
+        <input type="text" name=" bank_name" required><br>
+        <label>Location:</label><br>
+        <input type="text" name="location" required><br>
+        <label>Website:</label><br>
+        <input type="text" name="website" required><br>
+        <label>Contact:</label><br>
+        <input type="text" name="contact" required><br>
+        <label>Bank Account:</label><br>
+        <input type="text" name="bank_account" required><br>
+         <label>club_id:</label><br>
+          <input type="number" name="club_id" required><br>
+        <button type="submit" name="create">Create</button>
+    </form>
+    
+    <!-- User List -->
+    <h2>Bank </h2>
+     <form method="post" action="phpfile/landingbank.php">
+                    <input type="number" name="bank_id" placeholder=" New bank_id">
+                    <input type="text" name="newbank_name" placeholder="New bank_name">
+                    <input type="text" name="newlocation" placeholder="New location">
+                    <input type="website" name="newwebsite" placeholder="New website">
+                    <input type="text" name="newcontact" placeholder="New contact">
+                    <input type="text" name="newbank_account" placeholder="New bank_account">
+                    <input type="text" name="newclub_id" placeholder="New club_id">
+                    <button type="submit" name="update">Update</button>
+                    <button type="submit" name="delete">Delete</button>
+                    <button type="submit" name="read">View</button>
+                </form>
+</body>
+</html>

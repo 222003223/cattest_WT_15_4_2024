@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funclub</title>
+</head>
+<body>
+    <h1>Funclub</h1>
+    
+    <!-- Create Form -->
+    <h2>Create Record</h2>
+    <form method="post" action="landingfunclub.php">
+        <label for="funclub_id">Funclub_id:</label>
+        <input type="number" id="funclub_id" name="funclub_id"><br>
+        <label for="firstname">Name:</label>
+        <input type="text" id="name" name="name" required><br>
+        <label for="lastname">Description:</label>
+        <input type="text" id="description" name="description" required><br>
+        <label for="website">Website:</label>
+        <input type="website" id="website" name="website" required><br>
+        <label for="contact">Contact:</label>
+        <input type="text" id="contact" name="contact" required><br>
+        <label for="club_id">Club ID:</label>
+        <input type="text" id="club_id" name="club_id" required><br>
+        <button type="submit" name="create">Create</button>
+    </form>
+    
+    <!-- User List -->
+    <h2>Funclub</h2>
+     <form method="post" action="landingfunclub.php">
+                    <input type="number" name="funclub_id" placeholder=" New funclub_id">
+                    <input type="text" name="newname" placeholder="New name">
+                    <input type="text" name="newdescription" placeholder="Newd escription">
+                    <input type="website" name="newwebsite" placeholder="New website">
+                    <input type="text" name="newContact" placeholder="New Contact ">
+                    <input type="text" name="newclub_id" placeholder="New Club ID">
+                    <button type="submit" name="update">Update</button>
+                    <button type="submit" name="delete">Delete</button>
+                    <button type="submit" name="read">View</button>
+                </form>
+</body>
+</html>

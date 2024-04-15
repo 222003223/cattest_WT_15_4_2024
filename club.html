@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>club</title>
+</head>
+<body>
+    <h1>Club</h1>
+    
+    <!-- Create Form -->
+    <h2>Create  new Record</h2>
+    <form method="post" action="phpfile/landingclub.php">
+        <label>Club_id:</label><br>
+        <input type="text" name="club_id"><br>
+         <label>Name:</label><br>
+        <input type="text" name=" name" required><br>
+        <label>City:</label><br>
+        <input type="text" name="city" required><br>
+        <label>League:</label><br>
+        <input type="text" name="league" required><br>
+        <label>Stadium Name:</label><br>
+        <input type="text" name="stadium_name" required><br>
+         <label>League_id:</label><br>
+          <input type="number" name="league_id" required><br>
+        <button type="submit" name="create">Create</button>
+    </form>
+    
+    <!-- User List -->
+    <h2>Club</h2>
+     <form method="post" action="phpfile/landingclub.php">
+                    <input type="number" name="club_id" placeholder=" New club_id">
+                    <input type="text" name="newname" placeholder="New name">
+                    <input type="text" name="newcity" placeholder="New city">
+                    <input type="text" name="newleague" placeholder="New league">
+                    <input type="text" name="newstadium_name" placeholder="New stadium_name">
+                    <input type="text" name="newleague_id" placeholder="New league_id">
+                    <button type="submit" name="update">Update</button>
+                    <button type="submit" name="delete">Delete</button>
+                    <button type="submit" name="read">View</button>
+                </form>
+</body>
+</html>
